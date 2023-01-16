@@ -1,0 +1,19 @@
+import { ReactNode } from 'react';
+import { {{ properCase name }}ContextProvider } from './{{ properCase name }}.context';
+import { {{ properCase name }}Base } from './{{ properCase name }}.types';
+
+interface {{ properCase name }}Props extends {{ properCase name }}Base {
+  children: ReactNode;
+}
+
+const defaultProps = {};
+
+export default function {{ properCase name }}(props: {{ properCase name }}Props) {
+  const { children } = props;
+
+  return (
+    <{{ properCase name }}ContextProvider value={defaultProps}>
+      {children}
+    </{{ properCase name }}ContextProvider>
+  );
+}

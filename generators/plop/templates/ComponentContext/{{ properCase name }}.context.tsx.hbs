@@ -1,0 +1,6 @@
+import { createContext } from '@utils';
+import { {{ properCase name }}Base } from './{{ properCase name }}.types';
+
+type {{ properCase name }}Context = {{ properCase name }}Base;
+
+export const [{{ properCase name }}ContextProvider, use{{ properCase name }}Context] = createContext<{{ properCase name }}Context>();

@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+
+    // NOTE: @imports
+    "baseUrl": "src",
+    "paths": {
+      "@assets/*": ["public/assets/*"],
+      "@components/*": ["components/*"],
+      "@data/*": ["data/*"],
+      "@helpers": ["helpers"],
+      "@hooks/*": ["hooks/*"],
+      "@lib/*": ["lib/*"],
+      "@utils": ["utils"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "generators/plop/utils/get-actions.mjs"],
+  "exclude": ["node_modules"]
+}
